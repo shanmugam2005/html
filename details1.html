@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furlenco</title>
+    <link rel="icon" type="image/x-icon" href="/hotel-logo.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+      .price{
+        background-color:burlywood;
+        border-radius: 10px;
+        color:red;
+        font-weight: bolder;
+      }
+    /* Set a minimum height for the image slider */
+
+        body{
+          background-color:black;
+          color:white;
+        }
+        /* Custom CSS for sticky navbar */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        } .form-control {
+        width: 300px; /* Adjust the width as needed */
+        }
+        .headlogo{
+          padding:10px;
+          left:0px;
+        }
+        .navbar-brand {
+        margin-right: 20px; /* Add margin to create space on the right of the logo */
+    }
+    .navbar-collapse {
+        padding-left: 20px; /* Add padding to the left of the collapsed menu */
+        padding-right: 20px; /* Add padding to the right of the collapsed menu */
+    }
+    </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+      <div class="container">
+          <img src="Go-logo-White.jpg" width="100px" class="headlogo">
+          <h3 padding="10px"><b>Furlenco</b></h3>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" margin-left="10px" margin-bottom="10px">Cart</a>
+                  </li>
+              </ul>
+              <!-- Search bar for small screens -->
+              <form class="form-inline d-lg-none">
+                  <input type="text" class="form-control" placeholder="Search for furniture...">
+                  <button class="btn btn-dark" type="button">Search</button>
+              </form>
+          </div>
+          <!-- Search bar for larger screens -->
+          <form class="form-inline d-none d-lg-block">
+              <input type="text" class="form-control" placeholder="Search for furniture...">
+              <button class="btn btn-dark" type="button">Search</button>
+          </form>
+      </div>
+  </nav>
+  <div class="menu">
+    <div id="box"><img src="/ezgif-1-65801d0e4e.jpg" id="image">
+         <figcaption><h2>Flex Leatherette Sofa </h2>
+       <p class="price">$400/mo</p></figcaption>
+   <a href="newpage.html"><button class="order">Add to Cart</button></a></div><div id="box"><img src="ezgif-1-af209f8cea.jpg" id="image">
+       <figcaption><h2>Modern Minimalist Sofa</h2>
+    <p class="price">$390/mo</p></figcaption>
+    <a href="newpage.html"><button class="order">Add to Cart</button></a></div><div id="box"><img src="ezgif-2-082015eb09.jpg" id="image">
+       <figcaption><h2>Retro Vintage Couch</h2>
+    <p class="price">$699/mo</p></figcaption>
+    <a href="newpage.html"><button class="order">Add to Cart</button></a></div><div id="box"><img src="ezgif-1-640c5023b1.jpg" id="image">
+       <figcaption><h2>Luxury Leather Sectional</h2>
+    <p class="price">$699/mo</p></figcaption>
+    <a href="newpage.html"><button class="order">Add to Cart</button></a></div><div id="box"><img src="sofa3.jpg" id="image">
+       <figcaption><h2>Convertible Sleeper Sofa</h2>
+    <p class="price">$699/mo</p></figcaption>
+    <a href="newpage.html"><button class="order">Add to Cart</button></a></div><div id="box"><img src="ezgif-1-65801d0e4e.jpg" id="image">
+       <figcaption><h2>Bohemian Chic Loveseat</h2>
+    <p class="price">$299/mo</p></figcaption>
+    <a href="newpage.html"><button class="order">Add to Cart</button></a></div>
+    <div id="box"><img src="ezgif-1-af209f8cea.jpg" id="image">
+        <figcaption><h2>Flex Leatherette Sofa</h2>
+     <p class="price">$600/mo</p></figcaption>
+     <a href="newpage.html"><button class="order">Add to Cart</button></a></div>
+     <div id="box"><img src="ezgif-2-082015eb09.jpg" id="image">
+        <figcaption><h2>Luxury Leather Sectional</h2>
+     <p class="price">$400/mo</p></figcaption>
+     <a href="newpage.html"><button class="order">Add to Cart</button></a></div>
+     <div id="box"><img src="ezgif-1-640c5023b1.jpg" id="image">
+        <figcaption><h2>Modern Minimalist Sofa</h2>
+     <p class="price">$159/mo</p></figcaption>
+     <a href="newpage.html"><button class="order">Add to Cart</button></a></div>
+     <div id="box"><img src="sofa3.jpg" id="image">
+        <figcaption><h2>Retro Vintage Couch</h2>
+     <p class="price">$199/mo</p></figcaption>
+     <a href="newpage.html"><button class="order">Add to Cart</button></a></div>
+ </div><hr>
+ <style>
+     @media only screen and (max-width: 767px) {
+        
+
+        #box {
+            width:100%;
+            margin:10px 0; /* Adjust the width as needed for small screens */
+        }
+    }
+    button{
+        border:none;
+    }
+    #box {
+    position:relative;
+    width: 40%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    border:2px solid royalblue;
+    margin: 10px;
+    flex-direction: column;
+    
+}
+#box:hover{
+    background-color:gray;
+    transform:scale(1.03);
+    transition:all 1s ease;
+    color:black;
+   
+}
+#image {
+    margin-top:0;
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+}
+figcaption{
+    display:block;
+    text-align: center;
+}
+.footer {
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        align-items: center; /* Vertically align items in the footer */
+        flex-wrap: wrap; /* Wrap the columns in small screens */
+    }
+
+    .left-col, .right-col {
+        flex: 1;
+        padding: 20px; /* Add padding between elements */
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        margin: 5px; /* Add margin around each logo */
+    }
+
+    .lastlogo {
+        height: 200px; /* Reduce the size for small screens */
+        width: 200px; /* Reduce the size for small screens */
+        border-radius: 100px; /* Maintain aspect ratio */
+        margin-left: 50px; /* Adjust margin */
+    }
+
+    @media only screen and (max-width: 600px) {
+        .lastlogo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            margin: 0; /* Remove margin for small screens */
+        }
+    }
+.menu{
+    margin-top:70px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.order{
+    background-color: red;
+    color:white;
+    overflow:hidden;
+    text-align:center;
+    border-radius:10px;
+}
+ </style>
+<hr>  
+<div class="footer" id="footer">
+    <div class="left-col">
+        <h5>Reach us at:</h5>
+        <a link href="https://twitter.com/PremKumar_db"><img src="/twitter.jpg" class="logo"></a>
+        <a link href="https://wa.me/+919500826060"><img src="/whatsapp.jfif" class="logo"></a>
+        <a href="https://www.facebook.com/profile.php?id=100086582599898&mibextid=avESrC"><img src="/facebook.jpg" class="logo"></a>
+        <a href="https://instagram.com/premkumar_db19?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D"><img src="/instagram.jfif" class="logo"></a>
+    </div>
+    <div class="right-col">
+        <section class="container my-5">
+            <h2>Contact Us</h2>
+            <form action="newpage.html">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </section>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-2">
+
+    <p>© 2023 Furlenco</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+   
+</body>
+</html>

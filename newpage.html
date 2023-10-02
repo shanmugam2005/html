@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furlenco</title>
+    <link rel="icon" type="image/x-icon" href="/hotel-logo.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       #review {
+    transition: all 1s ease;
+       }
+#review:hover {
+    transform: scale(1.1); 
+}
+
+       
+        .carousel-inner img {
+        height: 100%;
+        width: auto;
+    }
+@media only screen and (max-width: 767px) {
+    .card#dis {
+        margin-bottom: 20px;  
+    }
+    .carousel-inner img {
+        height:350px;
+        width: auto; 
+    }
+   
+}
+#exp-image {
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+   
+}
+
+
+        #dis{
+         background-color: black;
+         color:white;
+          text-align: center;
+          border:1px solid gainsboro;
+        }#dis:hover{
+          background-color:white;
+          color:black;
+        }
+        #exp-image{
+            position:relative;
+    text-align:center;
+    top:0px;
+    width:100%;
+   
+        }
+        .full-width {
+    width: 100%;
+    height: auto;
+    
+}
+.front-button {
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px; 
+    text-decoration: none; 
+}
+   
+
+        body{
+          background-color:black;
+          color:white;
+        }
+        .slider {
+            padding: 50px 0; 
+        }
+
+      
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        } .form-control {
+        width: 300px;
+        }
+        .headlogo{
+          padding:10px;
+          left:0px;
+        }
+        .navbar-brand {
+        margin-right: 20px; 
+    }
+    .navbar-collapse {
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+   
+    #onee{
+      background-color: red;
+      color:white;
+      border-radius:30px;
+      border:none;
+    }
+    </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+      <div class="container">
+          <img src="Go-logo-White.jpg" width="100px" class="headlogo">
+          <h3 padding="10px"><b>Furlenco</b></h3>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <button id="onee"><li class="nav-item" id="one" onclick="Greet()"></li></button>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" margin-left="10px" margin-bottom="10px">Cart</a>
+                  </li>
+              </ul>
+             
+              <form class="form-inline d-lg-none">
+                  <input type="text" class="form-control" placeholder="Search for furniture...">
+                  <button class="btn btn-dark" type="button">Search</button>
+              </form>
+          </div>
+          
+          <form class="form-inline d-none d-lg-block">
+              <input type="text" class="form-control" placeholder="Search for furniture...">
+              <button class="btn btn-dark" type="button">Search</button>
+          </form>
+      </div>
+  </nav>
+  
+
+    
+           <section id="headerCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Flat_1500_desktop_HP.jpg" class="d-block w-100" alt="Slider Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="unlmtd_desktop_whats_new.jpg" class="d-block w-100" alt="Slider Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="front.jpg" class="d-block w-100" alt="Slider Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="ezgif-5-6f3dbf458c.jpg" class="d-block w-100" alt="Slider Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="ezgif-5-7258071e48.jpg" class="d-block w-100" alt="Slider Image 3">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    
+       
+    </section>
+
+<section class="container mt-4">
+  <h2>Offers and Discounts</h2>
+  <div class="row">
+      <div class="col-md-3">
+          <div class="card" id="dis">
+              <div class="card-body">
+                  <h5 class="card-title">Offer 1</h5>
+                  <p class="card-text">Get flat 50% Off on your monthly to start renting today!<br>Use Coupon Code : <b>4590434</b></p>
+                  <a href="#" class="btn btn-primary">Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card" id="dis">
+             <div class="card-body">
+                  <h5 class="card-title">Offer 2</h5>
+                  <p class="card-text">Get flat 50% Off on your monthly to start renting today!<br>Use Coupon Code : <b>4590434</b></p>
+                  <a href="#" class="btn btn-primary">Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card" id="dis">
+              <div class="card-body">
+                  <h5 class="card-title">Offer 3</h5>
+                  <p class="card-text">Get flat 50% Off on your monthly to start renting today!<br>Use Coupon Code : <b>4590434</b></p>
+                  <a href="#" class="btn btn-primary">Details</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card" id="dis">
+              <div class="card-body">
+                  <h5 class="card-title">Offer 4</h5>
+                  <p class="card-text">Get flat 50% Off on your monthly to start renting today!<br>Use Coupon Code : <b>4590434</b></p>
+                  <a href="#" class="btn btn-primary">Details</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+    <main class="container mt-4">
+       
+        <section id="productCarousel1" class="carousel slide slider" data-ride="carousel">
+               <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="sofa3 (1).jpg" class="d-block w-100" alt="Product Image 1">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Sofas</h2>
+                            <p><i>Starting at $199 and 101 options available</i></p>
+                            <p><b>Discover the perfect sofa for your home in latest styles!</b></p>
+                            <a link href="details1.html"><button class="btn btn-primary">View Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="tableorg (1).jpg" class="d-block w-100" alt="Product Image 2">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Coffee Tables</h2>
+                            <p><i>Starting at $129 and 101 options available</i></p>
+                            <p><b>Transform your coffee breaks with our elegant coffee tables</b></p>
+                            <a link href="details2.html"><button class="btn btn-primary">View Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="tvorg (1).jpg" class="d-block w-100" alt="Product Image 3">
+                      </div>
+                      <div class="col-md-6">
+                        <h2>TV Units</h2>
+                        <p><i>Starting at $799 and 101 options available</i></p>
+                        <p><b>Enhance your viewing experience with our modern TV units.</b></p>
+                        <a link href="details3.html"><button class="btn btn-primary">View Details</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="recliner (1).jpg" class="d-block w-100" alt="Product Image 2">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Recliner</h2>
+                        <p><i>Starting at $199 and 101 options available</i></p>
+                        <p><b>Experience ultimate comfort and relaxation with our luxurious recliners</b></p>
+                        <a link href="details5.html"><button class="btn btn-primary">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="ottoman (1).jpg" class="d-block w-100" alt="Product Image 2">
+                  </div>
+                  <div class="col-md-6">
+                    <h2>Ottomans</h2>
+                    <p><i>Starting at $399 and 101 options available</i></p>
+                    <p><b>Complete your seating ensemble with our elegant ottomans</b></p>
+                    <a link href="details4a.html"><button class="btn btn-primary">View Details</button></a>
+                  </div>
+              </div>
+          </div>
+               
+
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+           
+        </section>
+    
+</main>
+
+<section class="container-fluid">
+    <div id="exp-image">
+        <img src="/conviction_update.jpg" width="100%" height="100%">
+    </div>
+</section>
+
+<section class="container mt-4">
+    <h2>What Our Customers Love</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="testimonial_web4.jpg" class="card-img-top" alt="Customer 1" id="review">
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="testimonial_web5.jpg" class="card-img-top" alt="Customer 2" id="review">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="testimonial_web1.jpg" class="card-img-top" alt="Customer 3" id="review">
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="container mt-4">   
+        
+        <section id="productCarousel2" class="carousel slide slider" data-ride="carousel">
+            
+               <section id="productCarousel2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="sofa3 (1).jpg" class="d-block w-100" alt="Product Image 3">
+                        </div>
+                        <div class="col-md-6">
+                          <h2>Elite Sofas</h2>
+                          <p><i>Starting at $129 and 101 options available</i></p>
+                          <p><b>Transform your coffee breaks with our elegant coffee tables</b></p>
+                          <a link href="details2.html"><button class="btn btn-primary">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="table1 (1).jpg" class="d-block w-100" alt="Product Image 3">
+                        </div>
+                        <div class="col-md-6">
+                          <h2>Elite Coffee Tables</h2>
+                          <p><i>Starting at $129 and 101 options available</i></p>
+                          <p><b>Transform your coffee breaks with our elegant coffee tables</b></p>
+                          <a link href="details2.html"><button class="btn btn-primary">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="tv1 (1).jpg" class="d-block w-100" alt="Product Image 3">
+                      </div>
+                      <div class="col-md-6">
+                        <h2>Elite TV</h2>
+                        <p><i>Starting at $129 and 101 options available</i></p>
+                        <p><b>Transform your coffee breaks with our elegant coffee tables</b></p>
+                        <a link href="details2.html"><button class="btn btn-primary">Add to Cart</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="recliner (1).jpg" class="d-block w-100" alt="Product Image 3">
+                    </div>
+                    <div class="col-md-6">
+                      <h2>Elite Recliner</h2>
+                      <p><i>Starting at $129 and 101 options available</i></p>
+                      <p><b>Transform your coffee breaks with our elegant coffee tables</b></p>
+                      <a link href="details2.html"><button class="btn btn-primary">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="ottoman (1).jpg" class="d-block w-100" alt="Product Image 3">
+                  </div>
+                  <div class="col-md-6">
+                    <h2>Elite Ottomans</h2>
+                    <p><i>Starting at $129 and 101 options available</i></p>
+                    <p><b>Transform your coffee breaks with our elegant coffee tables</b></p>
+                    <a link href="details2.html"><button class="btn btn-primary">Add to Cart</button></a>
+                  </div>
+              </div>
+          </div>
+               
+
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        
+        </section>
+    </main>  
+
+<!--<main class="container mt-4">-->
+    
+    <section id="productCarousel2" class="carousel slide slider" data-ride="carousel" id="content">
+        
+    </section>
+
+    
+    <section id="additionalImageCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/why_furlenco_carousel_desktop1.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/why_furlenco_carousel_desktop2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="why_furlenco_carousel3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#additionalImageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#additionalImageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+
+    <!-- 
+</main>-->
+<style>
+    .feed{
+        display:flex;
+        margin-top:35px;
+        text-align:center;
+        justify-content: center;
+        align-items:center;
+        background-color:black;
+    }
+            .feedback {
+      --normal: #414052;
+      --normal-shadow: #313140;
+      --normal-shadow-top: #4c4b60;
+      --normal-mouth: #2e2e3d;
+      --normal-eye: #282734;
+      --active: #f8da69;
+      --active-shadow: #f4b555;
+      --active-shadow-top: #fff6d3;
+      --active-mouth: #f05136;
+      --active-eye: #313036;
+      --active-tear: #76b5e7;
+      --active-shadow-angry: #e94f1d;
+      --hover: #454456;
+      --hover-shadow-top: #59586b;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    .feedback label {
+      position: relative;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .feedback label:not(:last-child) {
+      margin-right: 20px;
+    }
+    .feedback label input {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      outline: none;
+      border: none;
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+      border-radius: 50%;
+      background: var(--sb, var(--normal));
+      box-shadow: inset 3px -3px 4px var(--sh, var(--normal-shadow)), inset -1px 1px 2px var(--sht, var(--normal-shadow-top));
+      transition: background 0.4s, box-shadow 0.4s, transform 0.3s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .feedback label div {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transform: perspective(240px) translateZ(4px);
+    }
+    .feedback label div svg, .feedback label div:before, .feedback label div:after {
+      display: block;
+      position: absolute;
+      left: var(--l, 9px);
+      top: var(--t, 13px);
+      width: var(--w, 8px);
+      height: var(--h, 1px);
+      transform: rotate(var(--r, 0deg)) scale(var(--sc, 1)) translateZ(0);
+    }
+    .feedback label div svg {
+      fill: none;
+      stroke: var(--s);
+      stroke-width: 1.5px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 0.4s;
+    }
+    .feedback label div svg.eye {
+      --s: var(--e, var(--normal-eye));
+      --t: 17px;
+      --w: 7px;
+      --h: 4px;
+    }
+    .feedback label div svg.eye.right {
+      --l: 23px;
+    }
+    .feedback label div svg.mouth {
+      --s: var(--m, var(--normal-mouth));
+      --l: 11px;
+      --t: 23px;
+      --w: 18px;
+      --h: 7px;
+    }
+    .feedback label div:before, .feedback label div:after {
+      content: "";
+      z-index: var(--zi, 1);
+      border-radius: var(--br, 1px);
+      background: var(--b, var(--e, var(--normal-eye)));
+      transition: background 0.4s;
+    }
+    .feedback label.angry {
+      --step-1-rx: -24deg;
+      --step-1-ry: 20deg;
+      --step-2-rx: -24deg;
+      --step-2-ry: -20deg;
+    }
+    .feedback label.angry div:before {
+      --r: 20deg;
+    }
+    .feedback label.angry div:after {
+      --l: 23px;
+      --r: -20deg;
+    }
+    .feedback label.angry div svg.eye {
+      stroke-dasharray: 4.55;
+      stroke-dashoffset: 8.15;
+    }
+    .feedback label.angry input:checked {
+      -webkit-animation: angry 1s linear;
+              animation: angry 1s linear;
+    }
+    .feedback label.angry input:checked + div:before {
+      --middle-y: -2px;
+      --middle-r: 22deg;
+      -webkit-animation: toggle 0.8s linear forwards;
+              animation: toggle 0.8s linear forwards;
+    }
+    .feedback label.angry input:checked + div:after {
+      --middle-y: 1px;
+      --middle-r: -18deg;
+      -webkit-animation: toggle 0.8s linear forwards;
+              animation: toggle 0.8s linear forwards;
+    }
+    .feedback label.sad {
+      --step-1-rx: 20deg;
+      --step-1-ry: -12deg;
+      --step-2-rx: -18deg;
+      --step-2-ry: 14deg;
+    }
+    .feedback label.sad div:before, .feedback label.sad div:after {
+      --b: var(--active-tear);
+      --sc: 0;
+      --w: 5px;
+      --h: 5px;
+      --t: 15px;
+      --br: 50%;
+    }
+    .feedback label.sad div:after {
+      --l: 25px;
+    }
+    .feedback label.sad div svg.eye {
+      --t: 16px;
+    }
+    .feedback label.sad div svg.mouth {
+      --t: 24px;
+      stroke-dasharray: 9.5;
+      stroke-dashoffset: 33.25;
+    }
+    .feedback label.sad input:checked + div:before, .feedback label.sad input:checked + div:after {
+      -webkit-animation: tear 0.6s linear forwards;
+              animation: tear 0.6s linear forwards;
+    }
+    .feedback label.ok {
+      --step-1-rx: 4deg;
+      --step-1-ry: -22deg;
+      --step-1-rz: 6deg;
+      --step-2-rx: 4deg;
+      --step-2-ry: 22deg;
+      --step-2-rz: -6deg;
+    }
+    .feedback label.ok div:before {
+      --l: 12px;
+      --t: 17px;
+      --h: 4px;
+      --w: 4px;
+      --br: 50%;
+      box-shadow: 12px 0 0 var(--e, var(--normal-eye));
+    }
+    .feedback label.ok div:after {
+      --l: 13px;
+      --t: 26px;
+      --w: 14px;
+      --h: 2px;
+      --br: 1px;
+      --b: var(--m, var(--normal-mouth));
+    }
+    .feedback label.ok input:checked + div:before {
+      --middle-s-y: 0.35;
+      -webkit-animation: toggle 0.2s linear forwards;
+              animation: toggle 0.2s linear forwards;
+    }
+    .feedback label.ok input:checked + div:after {
+      --middle-s-x: 0.5;
+      -webkit-animation: toggle 0.7s linear forwards;
+              animation: toggle 0.7s linear forwards;
+    }
+    .feedback label.good {
+      --step-1-rx: -14deg;
+      --step-1-rz: 10deg;
+      --step-2-rx: 10deg;
+      --step-2-rz: -8deg;
+    }
+    .feedback label.good div:before {
+      --b: var(--m, var(--normal-mouth));
+      --w: 5px;
+      --h: 5px;
+      --br: 50%;
+      --t: 22px;
+      --zi: 0;
+      opacity: 0.5;
+      box-shadow: 16px 0 0 var(--b);
+      filter: blur(2px);
+    }
+    .feedback label.good div:after {
+      --sc: 0;
+    }
+    .feedback label.good div svg.eye {
+      --t: 15px;
+      --sc: -1;
+      stroke-dasharray: 4.55;
+      stroke-dashoffset: 8.15;
+    }
+    .feedback label.good div svg.mouth {
+      --t: 22px;
+      --sc: -1;
+      stroke-dasharray: 13.3;
+      stroke-dashoffset: 23.75;
+    }
+    .feedback label.good input:checked + div svg.mouth {
+      --middle-y: 1px;
+      --middle-s: -1;
+      -webkit-animation: toggle 0.8s linear forwards;
+              animation: toggle 0.8s linear forwards;
+    }
+    .feedback label.happy div {
+      --step-1-rx: 18deg;
+      --step-1-ry: 24deg;
+      --step-2-rx: 18deg;
+      --step-2-ry: -24deg;
+    }
+    .feedback label.happy div:before {
+      --sc: 0;
+    }
+    .feedback label.happy div:after {
+      --b: var(--m, var(--normal-mouth));
+      --l: 11px;
+      --t: 23px;
+      --w: 18px;
+      --h: 8px;
+      --br: 0 0 8px 8px;
+    }
+    .feedback label.happy div svg.eye {
+      --t: 14px;
+      --sc: -1;
+    }
+    .feedback label.happy input:checked + div:after {
+      --middle-s-x: 0.95;
+      --middle-s-y: 0.75;
+      -webkit-animation: toggle 0.8s linear forwards;
+              animation: toggle 0.8s linear forwards;
+    }
+    .feedback label input:checked {
+      --sb: var(--active);
+      --sh: var(--active-shadow);
+      --sht: var(--active-shadow-top);
+    }
+    .feedback label input:checked + div {
+      --m: var(--active-mouth);
+      --e: var(--active-eye);
+      -webkit-animation: shake 0.8s linear forwards;
+              animation: shake 0.8s linear forwards;
+    }
+    .feedback label input:not(:checked):hover {
+      --sb: var(--hover);
+      --sht: var(--hover-shadow-top);
+    }
+    .feedback label input:not(:checked):active {
+      transform: scale(0.925);
+    }
+    .feedback label input:not(:checked):active + div {
+      transform: scale(0.925);
+    }
+    .feedback label:hover {
+      transform: scale(1.08);
+    }
+    
+    @-webkit-keyframes shake {
+      30% {
+        transform: perspective(240px) rotateX(var(--step-1-rx, 0deg)) rotateY(var(--step-1-ry, 0deg)) rotateZ(var(--step-1-rz, 0deg)) translateZ(10px);
+      }
+      60% {
+        transform: perspective(240px) rotateX(var(--step-2-rx, 0deg)) rotateY(var(--step-2-ry, 0deg)) rotateZ(var(--step-2-rz, 0deg)) translateZ(10px);
+      }
+      100% {
+        transform: perspective(240px) translateZ(4px);
+      }
+    }
+    
+    @keyframes shake {
+      30% {
+        transform: perspective(240px) rotateX(var(--step-1-rx, 0deg)) rotateY(var(--step-1-ry, 0deg)) rotateZ(var(--step-1-rz, 0deg)) translateZ(10px);
+      }
+      60% {
+        transform: perspective(240px) rotateX(var(--step-2-rx, 0deg)) rotateY(var(--step-2-ry, 0deg)) rotateZ(var(--step-2-rz, 0deg)) translateZ(10px);
+      }
+      100% {
+        transform: perspective(240px) translateZ(4px);
+      }
+    }
+    @-webkit-keyframes tear {
+      0% {
+        opacity: 0;
+        transform: translateY(-2px) scale(0) translateZ(0);
+      }
+      50% {
+        transform: translateY(12px) scale(0.6, 1.2) translateZ(0);
+      }
+      20%, 80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(24px) translateX(4px) rotateZ(-30deg) scale(0.7, 1.1) translateZ(0);
+      }
+    }
+    @keyframes tear {
+      0% {
+        opacity: 0;
+        transform: translateY(-2px) scale(0) translateZ(0);
+      }
+      50% {
+        transform: translateY(12px) scale(0.6, 1.2) translateZ(0);
+      }
+      20%, 80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(24px) translateX(4px) rotateZ(-30deg) scale(0.7, 1.1) translateZ(0);
+      }
+    }
+    @-webkit-keyframes toggle {
+      50% {
+        transform: translateY(var(--middle-y, 0)) scale(var(--middle-s-x, var(--middle-s, 1)), var(--middle-s-y, var(--middle-s, 1))) rotate(var(--middle-r, 0deg));
+      }
+    }
+    @keyframes toggle {
+      50% {
+        transform: translateY(var(--middle-y, 0)) scale(var(--middle-s-x, var(--middle-s, 1)), var(--middle-s-y, var(--middle-s, 1))) rotate(var(--middle-r, 0deg));
+      }
+    }
+    @-webkit-keyframes angry {
+      40% {
+        background: var(--active);
+      }
+      45% {
+        box-shadow: inset 3px -3px 4px var(--active-shadow), inset 0 8px 10px var(--active-shadow-angry);
+      }
+    }
+    @keyframes angry {
+      40% {
+        background: var(--active);
+      }
+      45% {
+        box-shadow: inset 3px -3px 4px var(--active-shadow), inset 0 8px 10px var(--active-shadow-angry);
+      }
+    }
+    html {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    * {
+      box-sizing: inherit;
+    }
+    *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    #source-link {
+      top: 60px;
+    }
+    
+    #source-link > i {
+      color: rgb(94, 106, 210);
+    }
+    
+    #yt-link {  
+      top: 10px;
+    }
+    
+    #yt-link > i {
+      color: rgb(219, 31, 106); 
+    
+    }
+    
+    .meta-link {
+      align-items: center;
+      backdrop-filter: blur(3px);
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer;  
+      display: inline-flex;
+      gap: 5px;
+      left: 10px;
+      padding: 10px 20px;
+      position: fixed;
+      text-decoration: none;
+      transition: background-color 600ms, border-color 600ms;
+      z-index: 10000;
+    }
+    
+    .meta-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .meta-link > i, .meta-link > span {
+      height: 20px;
+      line-height: 20px;
+    }
+    
+    .meta-link > span {
+      color: white;
+      font-family: "Rubik", sans-serif;
+      transition: color 600ms;
+    }
+    
+        </style>
+    </head>
+        <div class="feed">
+           <h2 class="heading">Rate Us..!</h2>
+        <div class="feedback">
+            <label class="angry">
+                <input type="radio" value="1" name="feedback" Onclick="setTimeout(now, 1000)"/>
+                <div>
+                    <svg class="eye left">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="eye right">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="mouth">
+                        <use xlink:href="#mouth">
+                    </svg>
+                </div>
+            </label>
+            <label class="sad">
+                <input type="radio" value="2" name="feedback" onclick="setTimeout(now, 1000)" />
+                <div>
+                    <svg class="eye left">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="eye right">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="mouth">
+                        <use xlink:href="#mouth">
+                    </svg>
+                </div>
+            </label>
+            <label class="ok">
+                <input type="radio" value="3" name="feedback" Onclick="setTimeout(now, 1000)"/>
+                <div></div>
+            </label>
+            <label class="good">
+                <input type="radio" value="4" name="feedback" checked Onclick="setTimeout(now, 1000)"/>
+                <div>
+                    <svg class="eye left">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="eye right">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="mouth">
+                        <use xlink:href="#mouth">
+                    </svg>
+                </div>
+            </label>
+            <label class="happy">
+                <input type="radio" value="5" name="feedback" Onclick="setTimeout(now, 1000)"/>
+                <div>
+                    <svg class="eye left">
+                        <use xlink:href="#eye">
+                    </svg>
+                    <svg class="eye right">
+                        <use xlink:href="#eye">
+                    </svg>
+                </div>
+            </label>
+        </div>
+       </div>         
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+                <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+                <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+            </symbol>
+        </svg>
+    <script>
+      
+      function updateOne(input) {
+            var k = document.getElementById("one");
+            k.innerHTML = "Location: " + input;
+        }
+
+        
+        function Greet() {
+            var input = window.prompt("Mention Your City here");
+            if (input !== null && input !== "") {
+                alert("Location Updated to " + input);
+                updateOne(input);
+            }
+        }
+
+        
+        window.onload = Greet;
+
+        function now(){
+           alert("Thanks for your valuable feedback!");
+        }
+    </script>
+
+
+<style>
+    .footer {
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        align-items: center; 
+        flex-wrap: wrap; 
+    }
+
+    .left-col, .right-col {
+        flex: 1;
+        padding: 20px; 
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        margin: 5px; 
+    }
+
+    .lastlogo {
+        height: 200px; 
+        width: 200px; 
+        border-radius: 100px; 
+        margin-left: 50px;     }
+
+    @media only screen and (max-width: 600px) {
+        .lastlogo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            margin: 0; 
+        }
+    }
+</style>
+
+<hr>
+<div class="footer" id="footer">
+    <div class="left-col">
+        <h5>Reach us at:</h5>
+        <a link href="https://twitter.com/PremKumar_db"><img src="/twitter.jpg" class="logo"></a>
+        <a link href="https://wa.me/+919500826060"><img src="/whatsapp.jfif" class="logo"></a>
+        <a href="https://www.facebook.com/profile.php?id=100086582599898&mibextid=avESrC"><img src="/facebook.jpg" class="logo"></a>
+        <a href="https://instagram.com/premkumar_db19?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D"><img src="/instagram.jfif" class="logo"></a>
+    </div>
+    <div class="right-col">
+        <section class="container my-5">
+            <h2>Contact Us</h2>
+            <form action="newpage.html">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </section>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-2">
+
+    <p>© 2023 Furlenco</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   
+</body>
+</html>
