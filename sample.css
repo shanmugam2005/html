@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+h1{
+    color: red;
+    margin-left: 700px;
+    margin-top: 100px;
+}
+label{
+    color: rgb(246, 12, 43);
+}
+#form{
+    background-color: rgb(139, 211, 105);
+    border: 2px solid rgb(79, 17, 212);
+    width: 400px;
+    padding: 60px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+input,button{
+    color: red;
+}

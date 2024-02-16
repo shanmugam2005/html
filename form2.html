@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <h1>FORM</h1>
+    <form action="https://www.google.com/forms/about/" id="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name"/ required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your gmail"/> 
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male"/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Female"/>
+        <label for="female">Female</label>
+        <br><br>
+        <label for="country">Country</label>
+        <select name="Country">
+            <option value="select your country">Select your country</option>
+            <option value="India">India</option>
+            <option value="Brazil">Brazil</option>
+            <option value="China">China</option>
+        </select>
+        <br><br>
+        <label for="message">Message:</label>
+        <br><br>
+        <textarea name="message" rows="4" columns="30"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <button>Reset</button>
+    </form>
+</body>
+</html>
